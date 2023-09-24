@@ -27,7 +27,7 @@
         /* The sidebar menu */
     .sidenav {
       height: 100%; /* Full-height: remove this if you want "auto" height */
-      width: 200px; /* Set the width of the sidebar */
+      width: 220px; /* Set the width of the sidebar */
       position: fixed; /* Fixed Sidebar (stay in place on scroll) */
       z-index: 1; /* Stay on top */
       top: 1; /* Stay at the top */
@@ -69,6 +69,13 @@
       padding: 0px 10px;
     }
 
+    .my_profile {
+      position: relative;
+      top: 0px;
+      left: 25px;
+      border-radius: 50%;
+    }
+    
     /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
     @media screen and (max-height: 450px) {
       .sidenav {padding-top: 15px;}
@@ -80,6 +87,10 @@
 
   <body>
     <div class="sidenav">
+      <div>
+        <img src="../assets/img/profile.jpg" alt="Avatar" width="160" class="my_profile">
+        <h3 style="color:rgb(206, 206, 206); font-family:serif">&ensp;   <b>Saurabh Chatterjee</b> <br><br></h4>
+      </div>
       <a href="https://chatterjeesaurabh.github.io/index.html"><i class="fa fa-home" style="color: rgb(206, 206, 206); font-size:16px"></i>&emsp;<b>HOME</b></a>
       <a href="https://chatterjeesaurabh.github.io/Projects/index.html"><i class="fa fa-code" style="color: rgb(206, 206, 206); font-size:16px"></i>&emsp;<b>PROJECTS</b></a>
       <a class="active" href="#"><i class="fa fa-mortar-board" style="color: rgb(206, 206, 206); font-size:16px"></i>&ensp; <b>EDUCATION</b></a>
