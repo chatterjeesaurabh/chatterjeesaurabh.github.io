@@ -160,9 +160,10 @@
     <table>
       <tr>
         <ul>
-            <li> Detected face using a CNN model and performed Pupil localization.
-            <li> Estimated Saccades and Fixations using velocity-dispersion based threshold. Then Microsaccades estimated using a MAD-based Velocity Threshold in fixations. Binocular microsaccades selected based on temporal overlap. Outliers filtered out using RANSAC.
-            <li> Cognitive load estimated using the saccadic features.
+            <li> Developed face and facial landmark detection pipeline for video, and performed pupil localization by radial inspection of gradients. Developed CUDA algorithms to accelerate execution speed by 300 times.
+            <li> Blink detection and iris location correction using Cubic Spline interpolation.
+            <li> Screen gaze and heatmap estimation using Polynomial Regression. Classified eye motion into saccades and fixations using iris velocity and dispersion based thresholds.
+            <li> Built deep learning model using ResNet-18 by pre-training with facial expression images and further fine tuned with action unit intensity labels to estimate facial micro-expressions.
             
         </ul>
       </tr>
