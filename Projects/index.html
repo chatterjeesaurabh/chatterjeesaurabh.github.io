@@ -160,10 +160,11 @@
     <table>
       <tr>
         <ul>
-            <li> Developed face and facial landmark detection pipeline for video, and performed pupil localization by radial inspection of gradients. Developed CUDA algorithms to accelerate execution speed by 300 times.
-            <li> Blink detection and iris location correction using Cubic Spline interpolation.
-            <li> Screen gaze and heatmap estimation using Polynomial Regression. Classified eye motion into saccades and fixations using iris velocity and dispersion based thresholds.
-            <li> Built deep learning model using ResNet-18 by pre-training with facial expression images and further fine tuned with action unit intensity labels to estimate facial micro-expressions.
+            <li> Developed face and <b>facial landmark</b> detection pipeline for video, and performed <b>pupil localization</b> by radial inspection of gradients. Developed <b>CUDA</b> algorithms using <b>Numba</b> to accelerate execution speed by <b>300</b> times.
+            <li> Performed <b>blink detection</b> with 98.7% accuracy and corrected iris coordinates using Cubic Spline interpolation.
+            <li> Estimated <b>screen gaze</b> and heatmaps using <b>Polynomial Regression</b>. Classified eye motion into saccades and fixations based on iris velocity and dispersion based thresholds.
+            <li> Implemented pre-trained <b>Masked Auto-Encoder</b> and performed feature-wise <b>Knowledge Distillation</b> with task specific fine-tuning on lightweight <b>ResNet-18</b> to get facial action unit intensity in real-time.
+            <li> Used Feature Matching and <b>KL Divergence loss</b>. Improved PCC by 21% and reduced MSE by 26% compared to base model. Boosted inference speed by <b>2x times</b>.
             
         </ul>
       </tr>
